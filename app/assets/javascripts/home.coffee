@@ -1,6 +1,7 @@
 notificationsClick = 0
 document.addEventListener 'DOMContentLoaded', ->
-  M.AutoInit()
+  #Materialize.AutoInit()
+  M.AutoInit();
   elem = document.querySelector('.dropdown-trigger')
   instance = M.Dropdown.init(elem, {
     closeOnClick: false,

@@ -6,4 +6,5 @@ notification = '<li><a href="#!">Nenhuma notificação.</a></li>';
 notification += "<li><a href=''#!'><b><%= notice.sender.email %></b> <%= notice.body %></a></li>";
 <% end %>
 <% end %>
+console.log(notification)
 $('[data-behavior~=notices]').prepend(notification);
