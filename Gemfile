@@ -60,5 +60,5 @@ gem 'devise'
 gem 'jquery-rails'
 
 # Sempre inclua
-gem 'materialize-sass', '~> 1.0.0.beta'
+gem 'materialize-sass'#, '~> 1.0.0.beta'
 gem 'material_icons'
