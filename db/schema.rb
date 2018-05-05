@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_05_05_115833) do
+ActiveRecord::Schema.define(version: 2018_05_05_115954) do
+
+  create_table "notices", force: :cascade do |t|
+    t.string "body"
+    t.integer "sender_id"
+    t.integer "recipient_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["recipient_id"], name: "index_notices_on_recipient_id"
+    t.index ["sender_id"], name: "index_notices_on_sender_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
